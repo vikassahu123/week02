@@ -22,7 +22,8 @@ class  BankAccount{
 
     public double withdrawl(double newAmount) 
     { 
-        if(balance>0 && balance<=newAmount) 
+        if(balance>0 && balance>=newAmount)
+
         {
             balance-=newAmount; 
           System.out.println("withdrawling amount is = "+ newAmount);  
@@ -46,7 +47,7 @@ class  BankAccount{
           System.out.println("enter amount = ");  
           double newamount=s.nextDouble();
           if(ans==1) 
-          { depositAmount( newamount); 
+          { depositAmount( newamount);
           }
           else if(ans==2) 
           { 
